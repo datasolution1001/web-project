@@ -51,8 +51,7 @@ ul {
 /* End Global Rules */
 /* Start Header */
 .header {
-    padding-top: 15px;
-    padding-bottom: 15px;
+    
     position: absolute;
     z-index: 3;
     width: 100%;
@@ -62,6 +61,16 @@ ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
+    
+}
+.header .container::before {
+    content: "";
+    width: calc(100% - 30px);
+    position: absolute;
+    background-color: #a2a2a2;
+    bottom: 0;
+    height: 1px;
 }
 
 .header .container > a {
@@ -77,38 +86,94 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+}
+.header .container nav .toggle-menu {
+    font-size: 22px;
+    color: white;
     
 }
-.header .container nav > ul   {
+@media (min-width: 767px) {
+    .header .container nav .toggle-menu {
+        display: none;
+    }
+}
+.header .container nav ul   {
    display: flex;
-   justify-content: space-between;
-   flex-basis: 45%;
-   align-items: center;
-   
 }
-.header .container nav > ul a {
+@media (max-width: 767px) {
+    .header .container nav {
+        justify-content: flex-end;
+        
+    }
+    .header .container nav ul {
+        display: none;
+        align-items: flex-end;
+        transition: 0.3s;
+    }
+    .header .container nav .toggle-menu:hover + ul {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 75%;
+        height: 85vh;
+        background-color: white; 
+        z-index: -2;  
+    }
+}
+.header .container nav  ul li a {
+    padding: 40px 10px;
+    display: block;
+    font-size: 14px;
     text-decoration: none;
+    transition: .5s;
     color: white;
     width: 100%;
-    
+    position: relative;
+    z-index: 5;   
 }
-.header nav > ul a.active,
+.header nav  ul li a.active,
 .header nav > ul  a:hover{
     color: var(--main-color);
     border-bottom: 1px solid var(--main-color);
+}
+@media (max-width: 767px ) {
+    .header nav ul li a {
+        padding: 10px 0 10px 40px!important;
+        color: black !important;
+        position: relative;
+        width: 100%;
+    }
+    .header .container nav ul li a.active  {
+        margin-top: 70px;        
+    }
+    .header nav  ul li a.active {
+        border-width: 0;
+        color: var(--main-color);
+    }
+
+    .header nav > ul  a:hover{
+        border-width: 0px;
+}
 }
 .header .container ul:not(.header nav > ul) {
     display: none;
 }
 .header .container .phone {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     position: relative;
     right: 0;
     width: 180px;
     
+}
+@media (max-width: 767px)  {
+    .header .container .phone {
+        display: none;
+    }
 }
 .header .container .phone .icon {
     width: 40px;
@@ -163,7 +228,6 @@ ul {
     background-color: #1f2021;
     background-image: url('../imgs/noelle-guirola-5NqUXa6pZDM-unsplash.jpg');
     background-size: cover;
-    width: 100%;
     position: relative;    
     text-align: center;
 }
@@ -175,16 +239,26 @@ ul {
     height: 100%;
     background-color: rgb(0 0 0 / 35%);
 }
-.landing h1 {
+.landing .text {
+    margin-bottom: 30px;
     position: absolute;
-    top: 50%;
     left: 50%;
+    top: 50%;
     transform: translate(-50% , -50%);
-    color:white;
-    font-family: 'Work Sans', sans-serif; 
-    font-size: 50px;
-    margin: 0 0 48px;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
 }
+.landing h1 {
+    font-size: 50px;
+
+}
+@media (max-width:767px) {
+    .landing .text {
+        width: 100%;
+    }
+}
+
 .landing .button {
     position: absolute;
     background-color: var(--transparent-color);
@@ -196,6 +270,15 @@ ul {
     transform: translateX(-50%);
 
 }
+@media (max-width:767px) {
+    .landing .text {
+        padding: 30px !important;
+        width: 100%;
+    }
+    .landing .button {
+        top: 70%;
+    }
+}
 .landing .button a {
     text-decoration: none;
     color: white;
@@ -203,3 +286,5 @@ ul {
 }
 
 /* End Landing */
+/* Start Services */
+/* End Services */
