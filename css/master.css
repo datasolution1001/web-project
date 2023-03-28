@@ -1,25 +1,33 @@
 /* Start Variables */
+:root {
+    --main-color: #19c8fa;
+    --transparent-color: rgb(15 116 143);
+}
 /* End Varibales */
 /* Start Global Rules */
 * {
-    -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    
 }
 html {
     scroll-behavior: smooth;
 }
 body {
     font-family: 'Roboto', sans-serif;
-    /* font-family: 'Work Sans', sans-serif; */
+}
+ul {
+    list-style: none;
 }
 .container {
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
+    min-height: 97px;
 }
 /* Small */
 @media (min-width: 768px) {
@@ -41,3 +49,157 @@ body {
     }
 }
 /* End Global Rules */
+/* Start Header */
+.header {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    position: absolute;
+    z-index: 3;
+    width: 100%;
+    
+}
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .container > a {
+    color: white;
+    font-family: 'Work Sans', sans-serif;  
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 700;
+}
+.header .container nav {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.header .container nav > ul   {
+   display: flex;
+   justify-content: space-between;
+   flex-basis: 45%;
+   align-items: center;
+   
+}
+.header .container nav > ul a {
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    
+}
+.header nav > ul a.active,
+.header nav > ul  a:hover{
+    color: var(--main-color);
+    border-bottom: 1px solid var(--main-color);
+}
+.header .container ul:not(.header nav > ul) {
+    display: none;
+}
+.header .container .phone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    right: 0;
+    width: 180px;
+    
+}
+.header .container .phone .icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #ffffff33;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3;
+}
+.header .container .phone .icon:hover {
+    border: 2px solid white;
+}
+.header .container .phone .icon:hover::before  {
+    animation-name: phone-anim;
+    animation-duration: 0.3s;
+    animation-delay: 0.1s;
+}
+
+@keyframes phone-anim {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(1turn);
+    }
+}
+.header .container .phone .icon::before {
+    font-family: 'Font Awesome 5 Free';
+    content: '\f095';
+    font-weight:bold;
+    position: relative;
+    color: white;
+}
+.header .container .phone :last-child {
+    color: white;
+    font-size: 14px;
+}
+.header .container .phone:hover :last-child {
+    transform: scale(1.1);
+    margin-left: 10px;
+    transition: 0.3s;
+}
+ /* End Header */ 
+/* Start Landing */ 
+ .landing {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    min-height: 100vh;
+    background-color: #1f2021;
+    background-image: url('../imgs/noelle-guirola-5NqUXa6pZDM-unsplash.jpg');
+    background-size: cover;
+    width: 100%;
+    position: relative;    
+    text-align: center;
+}
+.landing .overlay {
+    position: absolute;
+    left:0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 / 35%);
+}
+.landing h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    color:white;
+    font-family: 'Work Sans', sans-serif; 
+    font-size: 50px;
+    margin: 0 0 48px;
+}
+.landing .button {
+    position: absolute;
+    background-color: var(--transparent-color);
+    padding: 15px 30px;
+    border-radius: 30px;
+    border-color: var(--transparent-color);
+    top: 65%;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+.landing .button a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+
+/* End Landing */
