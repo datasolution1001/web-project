@@ -613,6 +613,16 @@ a {
 .services .box:hover .img-holder::after {
     border-width: 80px 500px 80px 0px;
 }
+@media (max-width: 767px) {
+    .services .box .img-holder::after {
+        border-width: 0 0 80px 1000px;
+    }
+    .services .box:hover .img-holder::after {
+        border-width: 80px 1000px 80px 0px;
+        left: 0px;
+
+    }
+}
 .services .box .img-holder img {
     max-width: 100%;
 }
