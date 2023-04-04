@@ -312,12 +312,16 @@ a {
     font-size: 50px;
 
 }
-@media (max-width:767px) {
+@media (max-width: 991px) {
+    .landing .text {
+        width: 60%;
+    }
+}
+@media (max-width: 767px) {
     .landing .text {
         width: 100%;
     }
 }
-
 .landing .button {
     position: absolute;
     background-color: var(--main-color);
@@ -487,7 +491,8 @@ a {
     height: 180px;
     max-width: 100%;
   }
-@media (max-width: 767px) {
+
+@media (max-width: 991px) {
     .tours .box img {
         height: 300px;
     }
@@ -567,6 +572,129 @@ a {
     transform: rotate(5deg) scale(1.1);
 }
 /* End Galery */
+/* Start Servcies */
+.services {
+    padding-top: var(--main-padding-top);
+    padding-bottom: var(--main-padding-bottom);
+    position: relative;
+    background-color: white;
+}
+.services .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 40px;
+}
+.services .box {
+    text-align: center;
+    border: 1px solid #ccc;
+}
+.services .box .img-holder {
+    position: relative;
+    overflow: hidden;
+}
+.services .box .img-holder::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.services .box .img-holder::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    right: 0;
+    border-style: solid;
+    border-width: 0 0 80px 500px;
+    border-color: transparent transparent white transparent;
+    transition: var(--main-transition);
+}
+.services .box:hover .img-holder::after {
+    border-width: 80px 500px 80px 0px;
+}
+.services .box .img-holder img {
+    max-width: 100%;
+}
+.services .box  h2 {
+    position: relative;
+    font-size: 40px;
+    margin: auto;
+    width: fit-content;
+    
+
+}
+.services .box h2::after {
+    content: "";
+    position: absolute;
+    background-color: red;
+    bottom: -20px;
+    left: 15px;
+    height: 5px;
+    width: calc(100% - 30px);
+}
+.services .box p {
+    line-height: 2;
+    font-size: 20px;
+    margin: 30px 0;
+    padding: 20px;
+    color: #777;
+}
+.services .box a {
+    display: block;
+    border: 3px solid transparent;
+    width: fit-content;
+    margin: 0 auto 30px;
+    font-weight: bold;
+    font-size: 22px;
+    padding: 10px 30px;
+    border-radius: 6px;
+    transition: var(--main-transition);
+}
+.services .room .img-holder::before {
+     background-color: rgb(244 64 54 / 60%);
+}
+.services .room h2::after {
+    background-color: #f44036;
+}
+.services .room a {
+    color: #f44036;
+    border-color: #f44036;
+    background: linear-gradient(to right, #f44036 50%, white 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+} 
+.services .rest .img-holder::before {
+    background-color: rgb(0 150 136 / 60%);
+}
+.services .rest h2::after {
+   background-color: #009688;
+}
+.services .rest a {
+   color: #009688;
+   border-color: #009688;
+   background: linear-gradient(to right, #009688 50%, white 50%);
+   background-size: 200% 100%;
+   background-position: right bottom;
+} 
+.services .pool .img-holder::before {
+    background-color: rgb(3 169 244 / 60%);
+}
+.services .pool h2::after {
+   background-color: #03a9f4;
+}
+.services .pool a {
+   color: #03a9f4;
+   border-color: #03a9f4;
+   background: linear-gradient(to right, #03a9f4 50%, white 50%);
+   background-size: 200% 100%;
+   background-position: right bottom;
+} 
+.services .box:hover a {
+    background-position: left bottom;
+    color: white;
+}
+/* End Services */
 /* Start Animation */
 @keyframes land-anim {
     0%, 100% {
