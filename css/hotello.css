@@ -458,11 +458,6 @@ a {
     }
 }
 /* End Reservation */
-/* Start Services */
-
-.services{
-    background-color: whitesmoke;
-=========
 /* Start Articles */
 .tours {
     padding-top: 150px;
@@ -627,13 +622,6 @@ a {
     margin: auto;
     width: fit-content;
     
-<<<<<<< HEAD:css/master.css
-}
-/* End Services */
-/* Start about */
-
-  
-=======
 
 }
 .services .box h2::after {
@@ -773,4 +761,3 @@ a {
     }
 }
 /* End Animation */
->>>>>>> 9bc5615f53e2d235f8ea7acf1bb490e249b9831f:css/hotello.css
