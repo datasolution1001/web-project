@@ -319,15 +319,20 @@ a {
         width: 100%;
     }
 }
-.landing .button {
+.landing a {
+    display: block;
     position: absolute;
     background-color: var(--main-color);
+    color: white;
+    font-size: 14px;
     padding: 15px 30px;
     border-radius: 30px;
     border-color: var(--main-color);
-    top: 65%;
+    top: 60%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%, 50%);
+    z-index: 6;
+    cursor: pointer;
 
 }
 @media (max-width:767px) {
@@ -339,11 +344,7 @@ a {
         top: 70%;
     }
 }
-.landing .button a {
-    text-decoration: none;
-    color: white;
-    font-size: 14px;
-}
+
 
 /* End Landing */
 /* Start Reservation */
@@ -777,16 +778,16 @@ a {
     font-size: 12px;
     margin-left: 3px;
 }
-.contact form span {
+.contact form span{
     color: #666;
     font-size: 14px;  
     font-family:  Georgia, 'Times New Roman', Times, serif;
-    
 }
+
 .contact .ck{
         width: 20px;
         height: 20px;
-        margin-top: 20px;
+        margin-top: 10px;
         margin-right: 8px;
 } 
 
@@ -805,7 +806,11 @@ a {
     border: none;
     cursor: pointer; 
 }
-
+input:focus,
+textarea:focus {
+	
+	outline: none;
+}
 
 /* End Contact */
 /* Start Animation */
