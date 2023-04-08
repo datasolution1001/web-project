@@ -967,7 +967,7 @@ footer .container {
     font-size: 55px;
     font-weight: bold;
     letter-spacing: 2px;
-   
+    padding-bottom: 15px;
 }
 @media (max-width: 767px) {
     .head .info h3 {
