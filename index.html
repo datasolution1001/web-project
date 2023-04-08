@@ -31,8 +31,13 @@
                     <li ><a class="active" href="#Home">Home</a></li>
                     <li><a href="#tours">Destinations</a></li>
                     <li><a href="#services">Services</a></li>
+<<<<<<< HEAD
                     <li><a href="#">About</a></li>
                     <li><a href="#">Contact</a></li>
+=======
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+>>>>>>> 94615084c05c53376e702ffbf27f1949db6881f4
                 </ul>
             </nav>
             <div class="phone">
@@ -46,9 +51,8 @@
     <div class="landing">
         <div class="overlay"></div>
         <div class="text"><h1>Once a year go someplace you've never been before</h1></div>
-        <div class="button">
-            <a href="#Home">See video</a>
-        </div>
+        <a href="#Home">See video</a>
+        
     </div> 
     <!-- End Landing -->
     <!-- Start Reservation -->
@@ -245,10 +249,26 @@
     </div>
     <!-- End Services -->
     <!-- Start About -->
-    
     <!-- End About -->
-    
     <!-- Start Contact -->
+    <div class="contact" id="contact">
+      <h2 class="main-title">Contact US</h2>
+      <div class="container">
+        <p>Directly contact us by completing the form below <br> (<span>*</span> <b> -</b>  mandatory fields)</p>
+        <form action="">
+          <div class="flex-part">
+            <input type="text" name="name" id="name" placeholder="Name" required>
+            <input type="text" name="email" id="email" placeholder="Email Address" required>
+            <textarea name="message" id="message" placeholder="Message" required></textarea>
+          </div>
+          <div class="normal-part">
+            <span>New Field</span> <br>
+            <input type="checkbox" name="checkpolicy" class="ck" id="checkpolicy"><span>I agree to the Hotello <a href="#">Privacy Policy</a></span> 
+            <input type="submit" value="SEND">
+          </div>
+        </form>
+      </div>
+    </div>
     <!-- End Contact -->
     <!-- Start Footer -->
     <footer>
