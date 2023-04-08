@@ -756,7 +756,14 @@ a {
     padding: 30px;
     background-color: white;
     box-shadow: 0px 12px 20px 0px rgb(0 0 0 / 13%), 0px 2px 4px 0px rgb(0 0 0 / 12%);
-    overflow: scroll;
+    
+}
+@media(max-width: 767px) {
+    .about .story { 
+
+        overflow: scroll;
+    }
+    
 }
 .about .story h3{
     font-weight: bold;
@@ -909,7 +916,11 @@ footer {
     left: 0;
     background-color: rgb(0 0 0 / 60%);
 }
-
+@media (max-width: 767px) {
+    footer {
+        min-height: 60vh;
+    }
+}
 footer .container {
     position: relative;
     color: white;
@@ -941,7 +952,7 @@ footer .container {
 }
 @media (max-width: 767px) {
     .head .info h3 {
-   	font-size: 33px
+   	font-size: 33px;
    }
 }
  .head  a{
@@ -968,7 +979,8 @@ footer .tail {
 }
 @media (max-width: 767px) {
     footer .tail {
-       height: 100px
+       height: 100px;
+    }
  }
 footer .tail .containertwo{
     padding-left: 100px;
