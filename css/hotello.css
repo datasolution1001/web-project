@@ -289,6 +289,7 @@ a {
     background-size: cover;
     position: relative;    
     text-align: center;
+
 }
 .landing .overlay {
     position: absolute;
@@ -615,7 +616,7 @@ a {
 }
 @media (max-width: 767px) {
     .services .box .img-holder::after {
-    border-width: 80px 1500px 80px 0px;
+    border-width: 0px 0px 80px 500px;
     }
     
 }
@@ -702,6 +703,84 @@ a {
 }
 
 /* End Services */
+/* Start Footer */
+
+footer {
+    background-image: url('../imgs/footer.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 200px;
+    color: #fff;
+    padding-top: 10px;
+    position: relative;    
+
+    
+  }
+ 
+  
+  .bas{
+    position: absolute;
+	font-size:15px;
+	color: var(--fgreen);
+	text-align:center;
+    font-weight: 800;
+    max-width: 200px;
+    margin: 20px 10px 200px 1100px;
+    padding: 100px auto;
+  }
+ 
+  
+  .social-icons {
+    display: flex;
+    justify-content:end;
+    align-items:flex-end;
+    max-width: 150px ;
+    margin: 50px 10px 0px 1100px;
+    
+    
+  }
+  
+  .social-icons a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin: 0 5px;
+    text-align: center;
+    line-height: 40px;
+    transition: all 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+    transform: translateY(5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  .fa {
+    font-size: 20px;
+    color: #333;
+  }
+  
+  
+  .footer-para{
+    position: absolute;
+    padding-left: 10px;
+    display: inline;
+    width: 30%;
+    height: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    line-height: 2;
+
+    
+  }
+.footer-para span{
+    color:teal;
+}
+  
+/* End Footer */
+
 /* Start Animation */
 @keyframes land-anim {
     0%, 100% {
