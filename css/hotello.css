@@ -286,6 +286,7 @@ a {
     background-size: cover;
     position: relative;    
     text-align: center;
+
 }
 .landing .overlay {
     position: absolute;
@@ -604,7 +605,7 @@ a {
     bottom: -2px;
     right: 0;
     border-style: solid;
-    border-width: 0 0 80px 500px;
+    border-width: 0px 0px 80px 500px;
     border-color: transparent transparent white transparent;
     transition: var(--main-transition);
 }
@@ -613,6 +614,11 @@ a {
 }
 @media (max-width: 767px) {
     .services .box .img-holder::after {
+<<<<<<< HEAD
+    border-width: 0px 0px 80px 500px;
+    }
+    
+=======
         border-width: 0 0 80px 1000px;
     }
     .services .box:hover .img-holder::after {
@@ -620,6 +626,7 @@ a {
         left: 0px;
 
     }
+>>>>>>> 94615084c05c53376e702ffbf27f1949db6881f4
 }
 .services .box .img-holder img {
     max-width: 100%;
@@ -702,7 +709,88 @@ a {
     background-position: left bottom;
     color: white;
 }
+
 /* End Services */
+<<<<<<< HEAD
+/* Start Footer */
+
+footer {
+    background-image: url('../imgs/footer.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 200px;
+    color: #fff;
+    padding-top: 10px;
+    position: relative;    
+
+    
+  }
+ 
+  
+  .bas{
+    position: absolute;
+	font-size:15px;
+	color: var(--fgreen);
+	text-align:center;
+    font-weight: 800;
+    max-width: 200px;
+    margin: 20px 10px 200px 1100px;
+    padding: 100px auto;
+  }
+ 
+  
+  .social-icons {
+    display: flex;
+    justify-content:end;
+    align-items:flex-end;
+    max-width: 150px ;
+    margin: 50px 10px 0px 1100px;
+    
+    
+  }
+  
+  .social-icons a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin: 0 5px;
+    text-align: center;
+    line-height: 40px;
+    transition: all 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+    transform: translateY(5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  .fa {
+    font-size: 20px;
+    color: #333;
+  }
+  
+  
+  .footer-para{
+    position: absolute;
+    padding-left: 10px;
+    display: inline;
+    width: 30%;
+    height: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    line-height: 2;
+
+    
+  }
+.footer-para span{
+    color:teal;
+}
+  
+/* End Footer */
+
+=======
 /* Start About */
 
 /* End About */
@@ -812,6 +900,7 @@ textarea:focus {
 }
 
 /* End Contact */
+>>>>>>> 94615084c05c53376e702ffbf27f1949db6881f4
 /* Start Animation */
 @keyframes land-anim {
     0%, 100% {
