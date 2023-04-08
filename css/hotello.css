@@ -711,6 +711,7 @@ a {
     padding-bottom: var(--main-padding-bottom);
     position: relative;
     background-color: var(--section-background);
+    
 }
 .about .container {
    display: flex;
@@ -793,6 +794,7 @@ a {
 .contact {
     padding-top: var(--main-padding-top);
     padding-bottom: var(--main-padding-bottom);
+    
 }
 .contact .container{
     position: relative;
@@ -969,7 +971,7 @@ footer .container {
 }
 @media (max-width: 767px) {
     .head .info h3 {
-   	font-size: 40px;
+   	font-size: 35px;
    }
 }
  .head  a{
