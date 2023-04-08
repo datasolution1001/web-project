@@ -331,7 +331,7 @@ a {
     top: 60%;
     left: 50%;
     transform: translate(-50%, 50%);
-    z-index: 6;
+    z-index: 1;
     cursor: pointer;
 
 }
@@ -340,8 +340,8 @@ a {
         padding: 30px !important;
         width: 100%;
     }
-    .landing .button {
-        top: 70%;
+    .landing a {
+        top: 75%;
     }
 }
 
@@ -808,7 +808,6 @@ a {
 }
 input:focus,
 textarea:focus {
-	
 	outline: none;
 }
 
