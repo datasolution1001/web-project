@@ -613,12 +613,11 @@ a {
     border-width: 80px 500px 80px 0px;
 }
 @media (max-width: 767px) {
-    .services .box .img-holder::after {
-<<<<<<< HEAD
-    border-width: 0px 0px 80px 500px;
-    }
+    .services .box .img-holder::after 
+   
+    {
     
-=======
+    border-width: 0px 0px 80px 500px;
         border-width: 0 0 80px 1000px;
     }
     .services .box:hover .img-holder::after {
@@ -626,7 +625,7 @@ a {
         left: 0px;
 
     }
->>>>>>> 94615084c05c53376e702ffbf27f1949db6881f4
+
 }
 .services .box .img-holder img {
     max-width: 100%;
@@ -711,7 +710,7 @@ a {
 }
 
 /* End Services */
-<<<<<<< HEAD
+
 /* Start Footer */
 
 footer {
@@ -790,7 +789,6 @@ footer {
   
 /* End Footer */
 
-=======
 /* Start About */
 
 /* End About */
@@ -901,7 +899,7 @@ textarea:focus {
 }
 
 /* End Contact */
->>>>>>> 94615084c05c53376e702ffbf27f1949db6881f4
+
 /* Start Animation */
 @keyframes land-anim {
     0%, 100% {
