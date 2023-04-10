@@ -161,7 +161,7 @@ a {
         
     }
     .header .container nav ul {
-        display: none;
+        display:none;
         align-items: flex-end;
         transition: 0.3s;
     }
@@ -175,7 +175,7 @@ a {
         width: 75%;
         height: 85vh;
         background-color: white; 
-        z-index: -2;  
+        z-index: 10;  
     }
 }
 .header .container nav  ul li a {
@@ -187,7 +187,7 @@ a {
     color: white;
     width: 100%;
     position: relative;
-    z-index: 5;   
+    z-index: 100;   
 }
 .header nav  ul li a.active,
 .header nav  ul li a:hover{
@@ -200,12 +200,13 @@ a {
         color: black !important;
         position: relative;
         width: 100%;
+	
     }
     .header .container nav ul li a.active  {
         margin-top: 70px;        
     }
     .header nav  ul li a.active {
-        border-width: 0;
+        border-width: 0px;
         color: var(--main-color);
     }
 
@@ -620,8 +621,9 @@ a {
     
     border-width: 0px 0px 80px 500px;}
 
-    .services .box .img-holder::after {
+    
 
+    .services .box .img-holder::after {
         border-width: 0 0 80px 1000px;
     }
     .services .box:hover .img-holder::after {
@@ -947,7 +949,7 @@ footer .container {
 }
 .head {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; 
     padding-top: 15px;
     
 }
