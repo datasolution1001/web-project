@@ -282,12 +282,21 @@ a {
     padding-top: 15px;
     padding-bottom: 15px;
     min-height: 100vh;
-    background-color: #1f2021;
     background-image: url('../imgs/noelle-guirola-5NqUXa6pZDM-unsplash.jpg');
     background-size: cover;
     position: relative;    
     text-align: center;
-
+    overflow: hidden;
+}
+#background-vd {
+    position: absolute;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    top:0;
+    transform: scale(1.2);
+    display: none;
+    transition: var(--main-transition);
 }
 .landing .overlay {
     position: absolute;
