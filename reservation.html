@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+     <!-- Font Awesome Library -->
+     <link rel="stylesheet" href="css/all.min.css">
+     <!-- Main Template CSS Files -->
+     <link rel="stylesheet" href="css/reservation.css">
+     <!-- Google font | Open Sans -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&family=Work+Sans:wght@200;300;400;600;700;900&display=swap" 
+          rel="stylesheet">
+         <!-- Icons | bibliothèque FontAwesome--> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      
+     <title>Hotel Reservation | School Project</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Reservation</h2>
+        <form action="" method="post"> 
+            <div class="content">
+                <div class="input-box">
+                    <label for="name">Full Name</label>
+                    <input type="text" placeholder="Enter full name" name="name" required>
+                </div>
+                <div class="input-box">
+                    <label for="email">Email</label>
+                    <input type="email" placeholder="Enter your email address" name="email" required>
+                </div>
+                <div class="input-box">
+                    <label for="cin">CIN</label>
+                    <input type="number" placeholder="Enter your CIN number" name="cin" required>
+                </div>
+                <div class="input-box">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" placeholder="Enter your number" name="phone" required>
+                </div>
+                <div class="input-box">
+                    <label for="password">Password</label>
+                    <input type="password" placeholder="Enter new password" name="password" required>
+                </div>
+                <div class="input-box">
+                    <label for="cpassword">Confirm Password</label>
+                    <input type="password" placeholder="Confirm password" name="cpassword" required>
+                </div>
+                <span class="gender-title">Gender</span>
+                <div class="gender-category">
+                    <input type="radio" name="gender" id="male">
+                    <label for="gender">Male</label>
+                    <input type="radio" name="gender" id="female">
+                    <label for="gender">Female</label>
+                </div>
+            </div>
+            <div class="alert">
+                <p>By clicking Sign Up, you agree to our <a href="#"> Terms,</a><a href="#"> Privacy Policy,</a> and <a href="#">Cookies Policy.</a> 
+                     You may receive SMS notifications from us and can opt out at any time.</p>
+            </div>
+            <div class="button-container">
+                <button type="submit">Register</button>
+            </div>
+        </form>
+    
+    </div>
+</body>
+</html>

@@ -60,11 +60,13 @@
     <div class="reservation" id="reservation">
         <div class="container">
             <div class="form">
-                <form action="">
-                    <input class="special-input" type="date" placeholder="Date Arrival">
-                    <input class="special-input" type="date" placeholder="Date Departure">
+              <form method="GET" 
+              target="_blank"
+                action="reservation.html">
+                    <input class="special-input" type="date"  required>
+                    <input class="special-input" type="date"  required>
                     <select class="special-input" name="persons">
-                        <option value=""># of Person</option>
+                        <option value="" ># of Person</option>
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -75,6 +77,8 @@
                 </form>
             </div>
         </div>
+        
+        
     </div>
     <!-- End Reservation -->
     <!-- Start Tours -->
