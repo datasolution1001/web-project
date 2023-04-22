@@ -50,6 +50,7 @@ h2 {
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 20px 0;
+    
 }
 .input-box {
     display: flex;
@@ -126,7 +127,7 @@ h2 {
     }
     .content {
         max-height: 380px;
-        overflow: hidden;
+        overflow: auto;
     }
     .input-box {
         margin-bottom: 12px;
@@ -143,4 +144,5 @@ h2 {
     .content::-webkit-scrollbar {
         width: 0;
     }
+    
 }
