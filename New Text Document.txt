@@ -1,0 +1,62 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 600px;
+
+}
+
+div {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    margin: auto;
+    transform-style: preserve-3d;
+    transition:  transform 1s;
+     transform-origin: left center; 
+
+}
+
+
+div::before {
+    content: "Front";
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: #fa3664;
+    font-size: 30px;
+    color: white;
+    font-weight: 600;
+    backface-visibility: hidden;
+
+   
+
+}
+
+div::after {
+    content: "Back";
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: #1692fc;
+    font-size: 30px;
+    color: white;
+    font-weight: 600;
+    z-index: -1;
+    transform: rotateY(180deg);
+
+
+}
+
+div:hover {
+    
+    transform: translate(100%) rotateY(-180deg);
+}

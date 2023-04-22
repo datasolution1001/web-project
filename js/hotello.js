@@ -1,4 +1,6 @@
-const form = document.querySelector("#contact form");
+/*
+function verfyContact() {
+  const form = document.querySelector("#contact form");
 const nameInput = document.querySelector("#name");
 const emailInput = document.querySelector("#email");
 const messageInput = document.querySelector("#message");
@@ -29,3 +31,16 @@ form.addEventListener("submit", (event) => {
   // Form is valid, submit it
   alert("Form submitted successfully!");
 });
+}
+*/
+
+function flip() {
+
+  let box = document.querySelector('#box6');
+  document.querySelector("#flip6").addEventListener( 'click' ,function() {
+  
+      box.style.display = 'transform: translate(100%) rotateY(-180deg)';
+     
+  } ) 
+
+}

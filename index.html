@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       
      <title>Hotel Reservation | School Project</title>
+     <script src="js/hotello.js"></script>
 </head>
 <body>
     <!-- Start Header -->
@@ -45,7 +46,7 @@
     <!-- Start Landing -->
     <div class="landing">
       <div id="background-vd">
-        <video decoding="async" autoplay muted loop >
+        <video  autoplay muted loop >
           <source src="imgs/tunisia-video.mp4" type="video/mp4">
         </video>
       </div>
@@ -60,11 +61,13 @@
     <div class="reservation" id="reservation">
         <div class="container">
             <div class="form">
-                <form action="">
-                    <input class="special-input" type="date" placeholder="Date Arrival">
-                    <input class="special-input" type="date" placeholder="Date Departure">
+              <form method="GET" 
+              target="_blank"
+                action="reservation.html">
+                    <input class="special-input" type="date"  required>
+                    <input class="special-input" type="date"  required>
                     <select class="special-input" name="persons">
-                        <option value=""># of Person</option>
+                        <option value="" ># of Person</option>
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -75,100 +78,328 @@
                 </form>
             </div>
         </div>
+        
+        
     </div>
     <!-- End Reservation -->
     <!-- Start Tours -->
     <div class="tours" id="tours">
         <h2 class="main-title">Tours & Places</h2>
-        <div class="container">
-          <div class="box">
-            <img decoding="async" src="imgs/gharelmelh.jpg" alt="" />
-            <div class="content">
-              <h3>Gharelmelh</h3>
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
+        <div class="container" id="cont">
+          <div class="box" id="box1">
+            <div class="card" id="card1">
+              <div class="front">
+                <img decoding="async" src="imgs/gharelmelh.jpg" alt="" />
+                <div class="content">
+                  <h3>Gharelmelh</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
+                </div>
+                <div class="info">
+                  <a id="flip1">Read More</a>
+                  <i class="fas fa-long-arrow-alt-right"></i>
+                </div>
+              </div>
+              <div class="back" id="back1">
+                <div class="content">
+                  <h3>Gharelmelh</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Vero, quo! Veniam non reprehenderit 
+                    dolorum sunt dolorem unde rem itaque labore.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                  </p>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit Lorem
+                     ipsum dolor sit amet 
+                    consectetur. Dolore, quo?
+                  </p>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit Lorem
+                     ipsum dolor sit amet 
+                    consectetur. Dolore, quo?
+                  </p>
+                </div>
+                <div class="info">
+                  <a id="flip-1">Read Less</a>
+                  <i class="fas fa-long-arrow-alt-right"></i>
+                </div>
+                </div>
+              </div>
             </div>
-            <div class="info">
-              <a href="">Read More</a>
-              <i class="fas fa-long-arrow-alt-right"></i>
+          <div class="box" id="box2">
+            <div class="card" id="card2">
+              <div class="front">
+                <img decoding="async" src="imgs/hammamet.jpg" alt="" />
+                <div class="content">
+                  <h3>Hammamet</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
+                </div>
+                <div class="info">
+                  <a id="flip2">Read More</a>
+                  <i class="fas fa-long-arrow-alt-right"></i>
+                </div>
+              </div>
+              <div class="back" id="back2">
+                <div class="content">
+                  <h3>Hammamet</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Vero, quo! Veniam non reprehenderit 
+                    dolorum sunt dolorem unde rem itaque labore.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                  </p>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit Lorem
+                     ipsum dolor sit amet 
+                    consectetur. Dolore, quo?
+                  </p>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit Lorem
+                     ipsum dolor sit amet 
+                    consectetur. Dolore, quo?
+                  </p>
+                </div>
+                <div class="info">
+                  <a id="flip-2">Read Less</a>
+                  <i class="fas fa-long-arrow-alt-right"></i>
+                </div>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="box">
-            <img decoding="async" src="imgs/hammamet.jpg" alt="" />
-            <div class="content">
-              <h3>Hammamet</h3>
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
+          <div class="box" id="box3">
+            <div class="card" id="card3">
+              <div class="front">
+                <img decoding="async" src="imgs/pexels-amin-weslati-8136613.jpg" alt="" />
+                <div class="content">
+                  <h3>Bizert</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
+                </div>
+                <div class="info">
+                  <a id="flip3">Read More</a>
+                  <i class="fas fa-long-arrow-alt-right"></i>
+                </div>
+              </div>
+              <div class="back" id="back3">
+                <div class="content">
+                  <h3>Bizert</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Vero, quo! Veniam non reprehenderit 
+                    dolorum sunt dolorem unde rem itaque labore.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                  </p>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit Lorem
+                     ipsum dolor sit amet 
+                    consectetur. Dolore, quo?
+                  </p>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit Lorem
+                     ipsum dolor sit amet 
+                    consectetur. Dolore, quo?
+                  </p>
+                </div>
+                <div class="info">
+                  <a id="flip-3">Read Less</a>
+                  <i class="fas fa-long-arrow-alt-right"></i>
+                </div>
+                </div>
+              </div>
             </div>
-            <div class="info">
-              <a href="">Read More</a>
-              <i class="fas fa-long-arrow-alt-right"></i>
+          <div class="box" id="box4">
+            <div class="card" id="card4">
+              <div class="front">
+                <img decoding="async" src="imgs/tunisia-g391b44cb1_1280.jpg" alt="" />
+                <div class="content">
+                  <h3>Jerba</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
+                </div>
+                <div class="info">
+                  <a id="flip4">Read More</a>
+                  <i class="fas fa-long-arrow-alt-right"></i>
+                </div>
+              </div>
+              <div class="back" id="back4">
+                <div class="content">
+                  <h3>Jerba</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Vero, quo! Veniam non reprehenderit 
+                    dolorum sunt dolorem unde rem itaque labore.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                  </p>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit Lorem
+                     ipsum dolor sit amet 
+                    consectetur. Dolore, quo?
+                  </p>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit Lorem
+                     ipsum dolor sit amet 
+                    consectetur. Dolore, quo?
+                  </p>
+                </div>
+                <div class="info">
+                  <a id="flip-4">Read Less</a>
+                  <i class="fas fa-long-arrow-alt-right"></i>
+                </div>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="box">
-            <img decoding="async" src="imgs/pexels-amin-weslati-8136613.jpg" alt="" />
-            <div class="content">
-              <h3>Bizert</h3>
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
+          <div class="box" id="box5">
+            <div class="card" id="card5">
+              <div class="front">
+                <img decoding="async" src="imgs/boat-g602b332fe_1920.jpg" alt="" />
+                <div class="content">
+                  <h3>Chat Jrid</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
+                </div>
+                <div class="info">
+                  <a id="flip5">Read More</a>
+                  <i class="fas fa-long-arrow-alt-right"></i>
+                </div>
+              </div>
+              <div class="back" id="back5">
+                <div class="content">
+                  <h3>Chat Jrid</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Vero, quo! Veniam non reprehenderit 
+                    dolorum sunt dolorem unde rem itaque labore.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                  </p>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit Lorem
+                     ipsum dolor sit amet 
+                    consectetur. Dolore, quo?
+                  </p>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit Lorem
+                     ipsum dolor sit amet 
+                    consectetur. Dolore, quo?
+                  </p>
+                </div>
+                <div class="info">
+                  <a id="flip-5">Read Less</a>
+                  <i class="fas fa-long-arrow-alt-right"></i>
+                </div>
+                </div>
+              </div>
             </div>
-            <div class="info">
-              <a href="">Read More</a>
-              <i class="fas fa-long-arrow-alt-right"></i>
+          <div class="box" id="box6">
+            <div class="card" id="card6">
+              <div class="front">
+                <img decoding="async" src="imgs/star-wars-ge0673f375_1280.jpg" alt="" />
+                <div class="content">
+                  <h3>Star Wars Location</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
+                </div>
+                <div class="info">
+                  <a id="flip6">Read More</a>
+                  <i class="fas fa-long-arrow-alt-right"></i>
+                </div>
+              </div>
+              <div class="back" id="back6">
+                <div class="content">
+                  <h3>Star Wars Location</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Vero, quo! Veniam non reprehenderit 
+                    dolorum sunt dolorem unde rem itaque labore.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                  </p>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit Lorem
+                     ipsum dolor sit amet 
+                    consectetur. Dolore, quo?
+                  </p>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit Lorem
+                     ipsum dolor sit amet 
+                    consectetur. Dolore, quo?
+                  </p>
+                </div>
+                <div class="info">
+                  <a id="flip-6">Read Less</a>
+                  <i class="fas fa-long-arrow-alt-right"></i>
+                </div>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="box">
-            <img decoding="async" src="imgs/tunisia-g391b44cb1_1280.jpg" alt="" />
-            <div class="content">
-              <h3>Jerba</h3>
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
+          <div class="box" id="box7">
+            <div class="card" id="card7">
+              <div class="front">
+                <img decoding="async" src="imgs/pexels-bedis-elacheche-891116.jpg" alt="" />
+                <div class="content">
+                  <h3>Ribat Sousa</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
+                </div>
+                <div class="info">
+                  <a id="flip7">Read More</a>
+                  <i class="fas fa-long-arrow-alt-right"></i>
+                </div>
+              </div>
+              <div class="back" id="back7">
+                <div class="content">
+                  <h3>Ribat Sousa</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Vero, quo! Veniam non reprehenderit 
+                    dolorum sunt dolorem unde rem itaque labore.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                  </p>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit Lorem
+                     ipsum dolor sit amet 
+                    consectetur. Dolore, quo?
+                  </p>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit Lorem
+                     ipsum dolor sit amet 
+                    consectetur. Dolore, quo?
+                  </p>
+                </div>
+                <div class="info">
+                  <a id="flip-7">Read Less</a>
+                  <i class="fas fa-long-arrow-alt-right"></i>
+                </div>
+                </div>
+              </div>
             </div>
-            <div class="info">
-              <a href="">Read More</a>
-              <i class="fas fa-long-arrow-alt-right"></i>
+            <div class="box" id="box8">
+              <div class="card" id="card8">
+                <div class="front">
+                  <img decoding="async" src="imgs/pexels-mahmoud-yahyaoui-14765462.jpg" alt="" />
+                  <div class="content">
+                    <h3>Cap Serat Bizert</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
+                  </div>
+                  <div class="info">
+                    <a id="flip8">Read More</a>
+                    <i class="fas fa-long-arrow-alt-right"></i>
+                  </div>
+                </div>
+                <div class="back" id="back6">
+                <div class="content">
+                  <h3>Cap Serat Bizert</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Vero, quo! Veniam non reprehenderit 
+                    dolorum sunt dolorem unde rem itaque labore.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                  </p>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit Lorem
+                     ipsum dolor sit amet 
+                    consectetur. Dolore, quo?
+                  </p>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit Lorem
+                     ipsum dolor sit amet 
+                    consectetur. Dolore, quo?
+                  </p>
+                </div>
+                
+                <div class="info">
+                  <a id="flip-8">Read Less</a>
+                  <i class="fas fa-long-arrow-alt-right"></i>
+                </div>
+              </div>
+              </div>
             </div>
-          </div>
-          <div class="box">
-            <img decoding="async" src="imgs/boat-g602b332fe_1920.jpg" alt="" />
-            <div class="content">
-              <h3>Chat Jrid</h3>
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
-            </div>
-            <div class="info">
-              <a href="">Read More</a>
-              <i class="fas fa-long-arrow-alt-right"></i>
-            </div>
-          </div>
-          <div class="box">
-            <img decoding="async" src="imgs/star-wars-ge0673f375_1280.jpg" alt="" />
-            <div class="content">
-              <h3>Star Wars Location</h3>
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
-            </div>
-            <div class="info">
-              <a href="">Read More</a>
-              <i class="fas fa-long-arrow-alt-right"></i>
-            </div>
-          </div>
-          <div class="box">
-            <img decoding="async" src="imgs/pexels-bedis-elacheche-891116.jpg" alt="" />
-            <div class="content">
-              <h3>Ribat Sousa</h3>
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
-            </div>
-            <div class="info">
-              <a href="">Read More</a>
-              <i class="fas fa-long-arrow-alt-right"></i>
-            </div>
-          </div>
-          <div class="box">
-            <img decoding="async" src="imgs/pexels-mahmoud-yahyaoui-14765462.jpg" alt="" />
-            <div class="content">
-              <h3>Cap Serat Bizert</h3>
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
-            </div>
-            <div class="info">
-              <a href="">Read More</a>
-              <i class="fas fa-long-arrow-alt-right"></i>
-            </div>
-          </div>
+            
         </div>
       </div>
     <!-- End Articles -->
@@ -335,7 +566,7 @@
     </footer>
     
     
-  <script src="js/hotellojs.js"></script>
+    <script src="js/hotellojs.js"></script> 
 
 </body>
 </html>
