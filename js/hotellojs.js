@@ -1,4 +1,19 @@
+//Start Toggle navBar
+let navBar = document.querySelector('#nav-bar');
+let menus_btn = document.querySelector('.toggle-menu');
+let close_btn = document.querySelector('.btn-close');
+document.querySelector(".toggle-menu").addEventListener( 'click' ,function() {
+    navBar.style.right = "0";
+})
+document.querySelector(".btn-close").addEventListener( 'click' ,function() {
+    navBar.style.right = "-100%";
+})
 
+//End Toggle navBar
+
+
+
+//Start background landing
 let video = document.querySelector('#background-vd');
 let button = document.querySelector('#change-back');
 document.querySelector("#change-back").addEventListener( 'click' ,function() {
@@ -6,8 +21,8 @@ document.querySelector("#change-back").addEventListener( 'click' ,function() {
     video.style.display = video.style.display === 'block' ? 'none' : 'block';
     button.textContent = button.textContent === 'Show image' ? 'Show video' : 'Show image';
 } ) 
-
-
+//End Background landing
+//Start tours cards
 
 let card8 = document.querySelector('#card8');
 let flipCard8 = document.querySelector('#flip-8')
@@ -94,8 +109,8 @@ flipCard1.onclick = function() {
     card1.style.transform = '';
 
 }
-
-
+//End tours cards
+// Start Servives 
 let room = document.querySelector('#room');
 document.querySelector("#slide-room").addEventListener('click' ,function() {
     room.style.top = ' 0';
@@ -117,3 +132,5 @@ document.querySelector("#slide-pool").addEventListener('click' ,function() {
 document.querySelector("#slide-pool-less").addEventListener('click' ,function() {
     pool.style.top = ' 100%';
 } )
+//End Services
+

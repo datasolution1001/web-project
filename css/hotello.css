@@ -154,7 +154,10 @@ a {
 .header .container nav .toggle-menu {
     font-size: 22px;
     color: white;
-    
+}
+.btn-close {
+    font-size: 22px;
+    color: black;
 }
 @media (min-width: 767px) {
     .header .container nav .toggle-menu {
@@ -169,23 +172,54 @@ a {
         justify-content: flex-end;
         
     }
-    .header .container nav ul {
-        display:none;
-        align-items: flex-end;
-        transition: 0.3s;
-    }
-    .header .container nav .toggle-menu:hover + ul {
-        display: flex;
-        align-items: flex-start;
+    .header .container nav .nav-bar {
+        position:fixed;
         flex-direction: column;
-        position: absolute;
-        top: 100%;
-        right: 0;
-        width: 75%;
-        height: 85vh;
-        background-color: white; 
-        z-index: 10;  
+        min-width: 300px;
+        height: 100vh;
+        background-color: white;
+        top: 0;
+        right: -100%;
+        z-index: 100;
+        align-items: flex-start;
+        justify-content: start;
+        padding-top: 30px;
+        transition: 0.6s
+
     }
+    .header .container nav .nav-bar .close-btn {
+        position: absolute;
+        top:0 ;
+        right: 0;
+        margin: 25px;
+    }
+    .header .container nav .nav-bar a {
+        display: block;
+        font-size: 18px;
+        font-weight: 600;
+        margin: 10px 15px;
+        color: black;
+        margin-left: 0;
+    }
+    .header .container nav .nav-bar li:hover a {
+        color: #86E5FF;
+        
+    }
+    .header .container nav .nav-bar li {
+        width: 100%;
+        margin-left: 0;
+
+    }
+    .header .container nav .nav-bar li:hover a::before {
+        content:  "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 1px;
+        background-color: var(--main-color);
+    }
+    
+    
 }
 .header .container nav  ul li a {
     padding: 40px 10px;
@@ -196,7 +230,8 @@ a {
     color: white;
     width: 100%;
     position: relative;
-    z-index: 100;   
+    z-index: 100;  
+    
 }
 .header nav  ul li a.active,
 .header nav  ul li a:hover{
@@ -206,22 +241,12 @@ a {
 @media (max-width: 767px ) {
     .header nav ul li a {
         padding: 10px 0 10px 40px!important;
-        color: black !important;
         position: relative;
         width: 100%;
-	
     }
     .header .container nav ul li a.active  {
         margin-top: 70px;        
-    }
-    .header nav  ul li a.active {
-        border-width: 0px;
-        color: var(--main-color);
-    }
-
-    .header nav > ul  a:hover{
-        border-width: 0px;
-}
+    }  
 }
 .header .container ul:not(.header nav > ul) {
     display: none;
@@ -369,9 +394,9 @@ a {
 /* End Landing */
 /* Start Reservation */
 .reservation {
-   position: relative;
+    position: relative;
     width: 100%;
-    z-index: 5; 
+    /* z-index: 5;  */
     
 }
 
@@ -692,7 +717,6 @@ a {
     border: 1px solid #ccc;
     position: relative;
     overflow: hidden;
-    transition: var(--main-transition);
 }
 .services .box .img-holder {
     position: relative;
