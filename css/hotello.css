@@ -154,10 +154,12 @@ a {
 .header .container nav .toggle-menu {
     font-size: 22px;
     color: white;
+    cursor: pointer;
 }
 .btn-close {
     font-size: 22px;
     color: black;
+    cursor: pointer;
 }
 @media (min-width: 767px) {
     .header .container nav .toggle-menu,
