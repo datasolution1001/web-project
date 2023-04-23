@@ -3,9 +3,25 @@ let navBar = document.querySelector('#nav-bar');
 let menus_btn = document.querySelector('.toggle-menu');
 let close_btn = document.querySelector('.btn-close');
 document.querySelector(".toggle-menu").addEventListener( 'click' ,function() {
+    navBar.style.display = "flex";
     navBar.style.right = "0";
 })
 document.querySelector(".btn-close").addEventListener( 'click' ,function() {
+    navBar.style.right = "-100%";
+})
+document.querySelector("#link1").addEventListener( 'click' ,function() {
+    navBar.style.right = "-100%";
+})
+document.querySelector("#link2").addEventListener( 'click' ,function() {
+    navBar.style.right = "-100%";
+})
+document.querySelector("#link3").addEventListener( 'click' ,function() {
+    navBar.style.right = "-100%";
+})
+document.querySelector("#link4").addEventListener( 'click' ,function() {
+    navBar.style.right = "-100%";
+})
+document.querySelector("#link5").addEventListener( 'click' ,function() {
     navBar.style.right = "-100%";
 })
 

@@ -160,19 +160,48 @@ a {
     color: black;
 }
 @media (min-width: 767px) {
-    .header .container nav .toggle-menu {
+    .header .container nav .toggle-menu,
+    .header .container nav .btn-close  {
         display: none;
     }
 }
 .header .container nav ul   {
    display: flex;
 }
+.header .container nav  ul li a {
+    padding: 40px 10px;
+    display: block;
+    font-size: 14px;
+    text-decoration: none;
+    transition: color 0.5s;
+    color: white;
+    width: 100%;
+    position: relative;
+    z-index: 100;  
+    
+}
+.header nav  ul li a.active,
+.header nav  ul li a:hover {
+    color: #86E5FF;
+    border-bottom: 1px solid #86E5FF;
+}
+@media (max-width: 767px ) {
+    .header nav ul li a {
+        padding: 10px 0 10px 40px!important;
+        position: relative;
+        width: 100%;
+    }
+    .header .container nav ul li a.active  {
+        margin-top: 70px;        
+    }  
+}
 @media (max-width: 767px) {
     .header .container nav {
         justify-content: flex-end;
         
-    }
+    } 
     .header .container nav .nav-bar {
+        
         position:fixed;
         flex-direction: column;
         min-width: 300px;
@@ -221,36 +250,8 @@ a {
     
     
 }
-.header .container nav  ul li a {
-    padding: 40px 10px;
-    display: block;
-    font-size: 14px;
-    text-decoration: none;
-    transition: .5s;
-    color: white;
-    width: 100%;
-    position: relative;
-    z-index: 100;  
-    
-}
-.header nav  ul li a.active,
-.header nav  ul li a:hover{
-    color: #86E5FF;
-    border-bottom: 1px solid #86E5FF;
-}
-@media (max-width: 767px ) {
-    .header nav ul li a {
-        padding: 10px 0 10px 40px!important;
-        position: relative;
-        width: 100%;
-    }
-    .header .container nav ul li a.active  {
-        margin-top: 70px;        
-    }  
-}
-.header .container ul:not(.header nav > ul) {
-    display: none;
-}
+
+
 .header .container .phone {
     display: flex;
     justify-content: flex-end;
@@ -396,7 +397,7 @@ a {
 .reservation {
     position: relative;
     width: 100%;
-    /* z-index: 5;  */
+    z-index: 1; 
     
 }
 
