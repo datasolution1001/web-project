@@ -160,7 +160,7 @@ a {
     font-size: 22px;
     color: black;
     cursor: pointer;
-}
+}s
 @media (min-width: 767px) {
     .header .container nav .toggle-menu,
     .header .container nav .btn-close  {
