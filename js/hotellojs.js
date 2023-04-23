@@ -94,3 +94,26 @@ flipCard1.onclick = function() {
     card1.style.transform = '';
 
 }
+
+
+let room = document.querySelector('#room');
+document.querySelector("#slide-room").addEventListener('click' ,function() {
+    room.style.top = ' 0';
+} )
+document.querySelector("#slide-room-less").addEventListener('click' ,function() {
+    room.style.top = ' 100%';
+} )
+let rest = document.querySelector('#rest');
+document.querySelector("#slide-rest").addEventListener('click' ,function() {
+    rest.style.top = ' 0';
+} )
+document.querySelector("#slide-rest-less").addEventListener('click' ,function() {
+    rest.style.top = ' 100%';
+} )
+let pool = document.querySelector('#pool');
+document.querySelector("#slide-pool").addEventListener('click' ,function() {
+    pool.style.top = ' 0';
+} )
+document.querySelector("#slide-pool-less").addEventListener('click' ,function() {
+    pool.style.top = ' 100%';
+} )

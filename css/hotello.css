@@ -690,6 +690,9 @@ a {
 .services .box {
     text-align: center;
     border: 1px solid #ccc;
+    position: relative;
+    overflow: hidden;
+    transition: var(--main-transition);
 }
 .services .box .img-holder {
     position: relative;
@@ -763,6 +766,7 @@ a {
     padding: 10px 30px;
     border-radius: 6px;
     transition: var(--main-transition);
+    cursor: pointer;
 }
 .services .room .img-holder::before {
      background-color: rgb(244 64 54 / 60%);
@@ -807,7 +811,48 @@ a {
     background-position: left bottom;
     color: white;
 }
+.services .box .slider {
 
+    
+    background-image: url(../imgs/taneli-lahtinen-RVL_gA9dz6o-unsplash.jpg);
+    background-size: cover;
+    position: absolute;
+    
+    top: 100%;
+    left: 0;
+    height: 100%;
+    padding: 20px;
+    transition: var(--main-transition);
+    
+    
+}
+.services .box .slider .overlay {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 / 40%);
+   z-index: -5;
+    
+    
+
+}
+.services .box .slider h2 {
+    margin-top: 20px ;
+    margin-bottom: 35px;
+}
+.services .box .slider p {
+    line-height: 1.4;
+    font-size: 20px;
+    margin: 15px;
+    padding: 0;
+    text-align: left;
+    color: white;
+    padding-bottom: 10px;
+    font-weight: bold;
+}
 /* End Services */
 /* Start About */
 .about {
