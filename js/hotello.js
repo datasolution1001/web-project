@@ -5,7 +5,7 @@ function validate(){
     const firstDateObj = new Date(firstDate);
     const secondDateObj = new Date(secondDate);
     if (firstDateObj > secondDateObj) {
-       alert("Enter A valid Date");
+       alert("Enter A valid Dates");
        return false;
       }
     

@@ -547,6 +547,12 @@ a {
         height: 300px;
     }
 }
+
+@media (max-width: 767px) {
+    .tours .box .front img {
+        height: 260px;
+    }
+}
 .tours .box .front .content {
     padding: 20px;
 }
@@ -565,6 +571,15 @@ a {
     justify-content: space-between;
     align-items: center;
 
+}
+@media (max-width: 767px) {
+    .tours .box .front .info {
+        padding: 20px;
+        height: 53px;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+    }
 }
 
 .tours .box .info a {
