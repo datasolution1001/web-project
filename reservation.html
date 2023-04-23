@@ -18,11 +18,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       
      <title>Hotel Reservation | School Project</title>
+     <script src="js/reservation.js"></script>
 </head>
 <body>
     <div class="container">
         <h2>Reservation</h2>
-        <form action="" method="post"> 
+        <form action="" method="post" onsubmit="return validateReservation()"> 
             <div class="content">
                 <div class="input-box">
                     <label for="name">Full Name</label>
@@ -30,29 +31,29 @@
                 </div>
                 <div class="input-box">
                     <label for="email">Email</label>
-                    <input type="email" placeholder="Enter your email address" name="email" required>
+                    <input type="email" placeholder="Enter your email address"  name="email" required>
                 </div>
                 <div class="input-box">
                     <label for="cin">CIN</label>
-                    <input type="number" placeholder="Enter your CIN number" name="cin" required>
+                    <input type="number" placeholder="Enter your CIN number" id="cin" name="cin" required>
                 </div>
                 <div class="input-box">
                     <label for="phone">Phone Number</label>
-                    <input type="tel" placeholder="Enter your number" name="phone" required>
+                    <input type="tel" placeholder="Enter your number" id="phone" name="phone" required>
                 </div>
                 <div class="input-box">
                     <label for="password">Password</label>
-                    <input type="password" placeholder="Enter new password" name="password" required>
+                    <input type="password" placeholder="Enter new password" name="password" id="pass" required>
                 </div>
                 <div class="input-box">
                     <label for="cpassword">Confirm Password</label>
-                    <input type="password" placeholder="Confirm password" name="cpassword" required>
+                    <input type="password" placeholder="Confirm password" name="cpassword" id="cpass" required>
                 </div>
                 <span class="gender-title">Gender</span>
                 <div class="gender-category">
-                    <input type="radio" name="gender" id="male">
+                    <input type="radio" name="gender" id="male" required>
                     <label for="gender">Male</label>
-                    <input type="radio" name="gender" id="female">
+                    <input type="radio" name="gender" id="female" required>
                     <label for="gender">Female</label>
                 </div>
             </div>

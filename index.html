@@ -60,14 +60,16 @@
     <!-- Start Reservation -->
     <div class="reservation" id="reservation">
         <div class="container">
-            <div class="form">
+            <div class="form" id="form">
               <form method="GET" 
               target="_blank"
-                action="reservation.html">
-                    <input class="special-input" type="date"  required>
-                    <input class="special-input" type="date"  required>
-                    <select class="special-input" name="persons">
-                        <option value="" ># of Person</option>
+                action="reservation.html"
+                onsubmit="return validate()" 
+                 >
+                    <input class="special-input" type="date" id="date1" required>
+                    <input class="special-input" type="date"  id="date2"required>
+                    <select class="special-input" name="persons" id="valuer" required>
+                        <option value=""># of Person</option>
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -76,6 +78,7 @@
                     </select>
                     <input type="submit" value="Book NOW">
                 </form>
+                
             </div>
         </div>
         
@@ -526,12 +529,12 @@
         <form action="">
           <div class="flex-part">
             <input type="text" name="name" id="name" placeholder="Name" required>
-            <input type="text" name="email" id="email" placeholder="Email Address" required>
+            <input type="email" name="email" id="email" placeholder="Email Address" required>
             <textarea name="message" id="message" placeholder="Message" required></textarea>
           </div>
           <div class="normal-part">
             <span>New Field</span> <br>
-            <input type="checkbox" name="checkpolicy" class="ck" id="checkpolicy"><span>I agree to the Hotello <a href="#">Privacy Policy</a></span> 
+            <input type="checkbox" name="checkpolicy" class="ck" id="checkpolicy" required><span>I agree to the Hotello <a href="#">Privacy Policy</a></span> 
             <input type="submit" value="SEND">
           </div>
         </form>
@@ -567,6 +570,7 @@
     
     
     <script src="js/hotellojs.js"></script> 
+   
 
 </body>
 </html>
