@@ -14,8 +14,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&family=Work+Sans:wght@200;300;400;600;700;900&display=swap" 
           rel="stylesheet">
-         <!-- Icons | bibliothèque FontAwesome--> 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
       
      <title>Hotel Reservation | School Project</title>
      <script src="js/reservation.js"></script>
@@ -23,7 +22,10 @@
 <body>
     <div class="container">
         <h2>Reservation</h2>
-        <form action="" method="post" onsubmit="return validateReservation()"> 
+        <form action="reservation.php" method="post" onsubmit="return validateReservation()" id="form"> 
+            <input class="hidden-input" type="text" name="arr_date" id="first-date" >
+            <input class="hidden-input" type="text" name="end_date"  id="second-date">
+            <input class="hidden-input" type="text" name="num-person" id="num-person">
             <div class="content">
                 <div class="input-box">
                     <label for="name">Full Name</label>
@@ -49,11 +51,29 @@
                     <label for="cpassword">Confirm Password</label>
                     <input type="password" placeholder="Confirm password" name="cpassword" id="cpass" required>
                 </div>
+                <div class="input-box">
+                    <label for="country">Country</label>
+                    <input type="text" placeholder="Enter Your country name" name="country" id="country" required>
+                </div>
+                <div class="input-box">
+                    <label for="dest">Destination</label>
+                    <select class="special-input" id="dest" name="dest"  required>
+                        <option value="">Choose a Destination</option>
+                        <option value="Gharelmelh">Gharelmelh</option>
+                        <option value="hammamet">hammamet</option>
+                        <option value="Bizert">Bizert</option>
+                        <option value="jerba">jerba</option>
+                        <option value="chat jrid">chat jrid</option>
+                        <option value="star wars location">star wars location</option>
+                        <option value="ribat sousa">ribat sousa</option>
+                        <option value="cap serat bizert">cap serat bizert</option>
+                    </select>
+                </div>
                 <span class="gender-title">Gender</span>
                 <div class="gender-category">
-                    <input type="radio" name="genre" id="male" required>
+                    <input type="radio" name="genre" value="male" id="male" required>
                     <label for="gender">Male</label>
-                    <input type="radio" name="genre" id="female" required>
+                    <input type="radio" name="genre" value="female" id="female" required>
                     <label for="gender">Female</label>
                 </div>
             </div>
@@ -67,5 +87,14 @@
         </form>
     
     </div>
+    <script>
+        const firstDate = localStorage.getItem('first-date');
+        const secondDate = localStorage.getItem('second-date');
+        const numPerson = localStorage.getItem('num-person');
+        const form = document.getElementById('form');
+        document.getElementById('first-date').value = firstDate;
+        document.getElementById('second-date').value = secondDate;
+        document.getElementById('num-person').value = numPerson;
+    </script>
 </body>
 </html>
