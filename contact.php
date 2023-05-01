@@ -10,7 +10,7 @@ $conn = new mysqli('localhost', 'root', '', 'hotello');
 
 $sql = "insert into contact(fname, femail, fmessage)
         values ('$fname', '$femail', '$fmessage')";
-
+      
     if ($conn->query($sql) === TRUE) {
         echo "Thanks for contacting us! We will be in touch with you shortly.";
     }
